@@ -6,7 +6,8 @@ I'll implementate a function to call a number when the power is off.
 
 
 ### Requirements:
-install apcupsd 
-Install PyTelegramBotAPI, do not install TELEBOT.
+install apcupsd  
+
+Install PyTelegramBotAPI, do not install TELEBOT since they are different libraries and doing so can cause issues.
 
 This is my first attempt to perform a Telegram bot in Python 3.5
