@@ -11,3 +11,7 @@ install apcupsd
 Install PyTelegramBotAPI, do not install TELEBOT since they are different libraries and doing so can cause issues.
 
 This is my first attempt to perform a Telegram bot in Python 3.5
+
+![image](https://raw.githubusercontent.com/juanstdio/UPS_TelegramBot/main/Screenshot_20210215-230033.png)
+
+Apache Licence attached.
