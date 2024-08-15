@@ -58,7 +58,7 @@ def reply_read(message):
     # the first string was generated, we'll append the rest 
     data += ("Line Voltage:" + first_line[48].decode("utf-8") + " [V]" + "\n")
     data += ("Battery Voltage: " + first_line[91].decode("utf-8") + " [V]" + "\n")
-    data += ("Load: " + first_line[52].decode("utf-8") + "%" + "\n")
+    data += ("Load: " + first_line[52].decode("utf-8") + "% = " + str( 1500 * float(first_line[52].decode("utf-8"))/100)+ " W" + "\n") #Conversion to Watts
     data += ("Battery Load:" + first_line[56].decode("utf-8")  + "%" + "\n")
     data += ("Remaining Time: " + first_line[60].decode("utf-8") + " Min" + "\n") 
     tb.send_message(str(chat_id.id),data)
@@ -77,7 +77,7 @@ def reply_serv(message):
 @tb.message_handler(func=lambda message: True)
 def dummy_response(message):  
     chat_id = message.from_user
-    tb.send_message(str(chat_id.id), "This Bot is configured to use with commands, please do not use text")
+    #tb.send_message(str(chat_id.id), "This Bot is configured to use with commands, please do not use text") depreciated 
     print ("message was request from ID:" + str(chat_id.id))
     
 tb.polling() #the keep-alive
