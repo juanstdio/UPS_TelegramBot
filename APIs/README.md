@@ -74,6 +74,9 @@ def last_ups_data():
 
 Esta función es crucial para obtener rápidamente el estado actual de la UPS y puede integrarse fácilmente en sistemas que requieran monitoreo en tiempo real.
 
+## Gratitudes
+- **Juan Gonzalez** & **Eze Fernandez** - _Por la mano y el feedback_ - [Juan Gonzalez](https://github.com/juanchixd) - [Eze Fernandez](https://github.com/ezefernandez93)
+
 ## Licencia
 
 Apache 2.0 - see the [LICENSE](LICENSE) 
